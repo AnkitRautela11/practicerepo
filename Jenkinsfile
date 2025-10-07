@@ -7,14 +7,5 @@ pipeline {
                 helloWorld('Ankit')
             }
         }
-
-        stage('Hello Jenkins') {
-            steps {
-                script {
-                    def util = new org.example.Utils(this)
-                    util.sayHelloJenkins()
-                }
-            }
-        }
     }
 }
