@@ -4,17 +4,9 @@ pipeline {
     stages {
         stage('Hello World') {
             steps {
-                helloWorld('Ankit')
-            }
-        }
-
-        stage('Hello Jenkins') {
-            steps {
-                script {
-                    def util = new org.example.Utils(this)
-                    util.sayHelloJenkins()
-                }
+                echo 'Hello, world! Webhook trigger verified successfully!'
             }
         }
     }
 }
+
