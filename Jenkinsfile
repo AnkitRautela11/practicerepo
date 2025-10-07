@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello World') {
             steps {
-                helloWorld('Ankit')
+                echo 'Hello, world! Webhook trigger verified successfully!'
             }
         }
     }
